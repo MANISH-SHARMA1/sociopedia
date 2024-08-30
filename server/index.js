@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "https://sociopedia-client-psi.vercel.app/",
+    origin: "https://sociopedia-client-psi.vercel.app",
   })
 );
 
