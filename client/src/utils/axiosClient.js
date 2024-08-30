@@ -9,11 +9,9 @@ import store from "../redux/store";
 import { setLoading, showToast } from "../redux/slices/appConfigSlice";
 import { TOAST_FAILURE } from "../App";
 
-// let baseURL = process.env.REACT_APP_SERVER_BASE_URL;
-let baseURL = "https://sociopedia-server-one.vercel.app/"
-// if (process.env.NODE_ENV === "production") {
-//   baseURL = process.env.REACT_APP_SERVER_BASE_URL;
-// }
+let baseURL = process.env.REACT_APP_SERVER_BASE_URL;
+// let baseURL = "https://sociopedia-server-one.vercel.app/"
+
 
 export const axiosClient = axios.create({
   baseURL,
